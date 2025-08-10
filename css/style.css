@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #FAF7F3;
+    
 }
 
 header {
@@ -15,26 +15,131 @@ a {
 }
 
 .imagen img {
-    border-radius: 10px;
-    height: 500px;
-    border: 2px solid black;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid black;
 }
+
 
 .presentacion {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
 }
 
+
 .imagen {
-    height: 600px;
     padding: 0px 20px 20px 20px;
 }
 
-.proyectos {
-    padding: 0 0 0 10px;
+.principal {
+  background-color: #F0E4D3;
+  border-radius: 20px;
 }
 
 .proyecto-1 p,a {
     padding: 0 0 0 20px;
 }
+
+.proyecto-1, .proyecto-2, .proyecto-3 {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  max-width: 600px;
+}
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 40px;
+  gap: 20px;
+}
+
+a {
+  color: #0077cc;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #005999;
+  text-decoration: underline;
+}
+
+.experiencia {
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+}
+
+.experiencia h2 {
+  margin-bottom: 20px;
+}
+
+.experiencia ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experiencia li {
+  margin-bottom: 15px;
+}
+
+.habilidades {
+  padding: 40px 20px;
+}
+
+.skills {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  background-color: #ddd;
+  padding: 10px 15px;
+  border-radius: 20px;
+  list-style: none;
+}
+
+.contacto {
+  padding: 30px;
+  background-color: #FAF7F3;
+}
+
+.contacto h2 {
+  margin-bottom: 20px;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contacto button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contacto button:hover {
+  background-color: #555;
+}
+
+
+
