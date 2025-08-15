@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -24,48 +26,60 @@ a {
     text-decoration: none;
 }
 
+.titulo {
+  font-size: 60px;
+  font-family: 'Edu NSW ACT Hand Cursive', sans-serif ;display: flex;
+  justify-content: center;
+}
+
+.subtitulo {
+  font-size: 45px ;
+  font-family: 'Edu NSW ACT Hand Cursive', sans-serif ;
+}
+
 .imagen img {
-  max-width: 100%;
+  max-width: 450px;
   height: auto;
   border-radius: 10px;
   border: 2px solid black;
 }
 
-
 .presentacion {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 50px;
   padding: 50px;
 }
 
-
 .imagen {
-    padding: 0px 20px 20px 20px;
+    padding: 0px 0px 20px 20px;
 }
 
 .principal {
   background-color: #F0E4D3;
   border-radius: 20px;
+  
 }
 
 .proyecto-1 p,a {
     padding: 0 0 0 20px;
 }
+.proyecto-2 p,a {
+    padding: 0 0 0 20px;
+}
 
-.proyecto-1, .proyecto-2, .proyecto-3 {
+.proyecto-1, .proyecto-2 {
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
   margin: 10px;
   max-width: 600px;
+  width: 100%;
 }
 .proyectos {
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  justify-content: space-between;
   padding: 40px;
   gap: 20px;
 }
@@ -151,5 +165,24 @@ a:hover {
   background-color: #555;
 }
 
+.sobre-mi {
+  max-width: 1380px; /* Caja no tan ancha */
+  margin:  10px 0 10px 0; /* Centrada horizontalmente */
+  padding: 20px 30px; /* Espacio interno */
+  background-color: #ffffff; /* Fondo blanco limpio */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+  border: 1px solid #e0e0e0; /* Borde sutil */
+  text-align: center; /* Centrar título y texto */
+  font-family: Arial, sans-serif;
+}
 
+.sobre-mi h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
 
+.sobre-mi p {
+  line-height: 1.6;
+  color: #555;
+}
